@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: load_balanced_route
+          uri: lb://example-service
+          predicates:
+            - Path=/loadbalanced/**
+server:
+  port: 8080

@@ -1,0 +1,6 @@
+spring:
+  security:
+    jwt:
+      secret: YOUR_SECRET_KEY_MUST_BE_AT_LEAST_32_BYTES_LONG_FOR_HS256_ALGORITHM
+server:
+  port: 8082

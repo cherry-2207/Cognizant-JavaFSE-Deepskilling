@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: resilience_route
+          uri: http://example.org
+          predicates:
+            - Path=/resilient/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: exampleCircuitBreaker
+                fallbackUri: forward:/fallback
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      exampleCircuitBreaker:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        failureRateThreshold: 50
+
+server:
+  port: 8080
