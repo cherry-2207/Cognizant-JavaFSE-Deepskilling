@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cohort Details Component should always render same html 1`] = `
+<DocumentFragment>
+  <div
+    class="box"
+    style="border: 1px solid black; padding: 10px; margin: 10px; border-radius: 10px; width: 300px;"
+  >
+    <h3
+      style="color: green;"
+    >
+      ADM23CH001
+    </h3>
+    <dl>
+      <dt
+        style="font-weight: 500;"
+      >
+        Course Name
+      </dt>
+      <dd>
+        Java Full Stack Engineering
+      </dd>
+      <dt
+        style="font-weight: 500;"
+      >
+        Status
+      </dt>
+      <dd>
+        ongoing
+      </dd>
+      <dt
+        style="font-weight: 500;"
+      >
+        Start Date
+      </dt>
+      <dd>
+        2026-05-15
+      </dd>
+      <dt
+        style="font-weight: 500;"
+      >
+        End Date
+      </dt>
+      <dd>
+        2026-08-15
+      </dd>
+      <dt
+        style="font-weight: 500;"
+      >
+        Number of Students
+      </dt>
+      <dd>
+        32
+      </dd>
+    </dl>
+  </div>
+</DocumentFragment>
+`;

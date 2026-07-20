@@ -1,0 +1,17 @@
+.btn-light {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-light:hover {
+  background-color: #0056b3;
+}
+
+.btn-dark {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-dark:hover {
+  background-color: #e0a800;
+}
